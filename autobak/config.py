@@ -12,4 +12,3 @@ class Config:
 		ciphertext = IO.get_resource('https://www.objectstream.com/autobak/'+hostname)
 		return json.loads(self.aesutil.decrypt(ciphertext).decode())
 
-print( Config()() ) 
