@@ -7,8 +7,10 @@ class AutoBak:
 		self.config = Config()()
 		print(self.config,type(self.config))
 
+	def __call__(self):
+		Purge(self.config)()
+
 
 if __name__ == '__main__':
 	TmpStorage()()
-	Purge()()
-	AutoBak()
+	AutoBak()()
