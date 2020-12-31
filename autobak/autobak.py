@@ -7,4 +7,6 @@ class AutoBak:
 		print(self.config,type(self.config))
 
 
-AutoBak()
+if __name__ == '__main__':
+	TmpStorage()()
+	AutoBak()
