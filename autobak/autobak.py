@@ -1,5 +1,6 @@
 from oslib_all_imports import *
 from config import Config
+from purge import Purge
 
 class AutoBak:
 	def __init__(self):
@@ -9,4 +10,5 @@ class AutoBak:
 
 if __name__ == '__main__':
 	TmpStorage()()
+	Purge()()
 	AutoBak()
